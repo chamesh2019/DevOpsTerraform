@@ -1,6 +1,12 @@
 # 🚀 ThreeTieredWebApp
 
-A robust and scalable three-tier architecture deployment using **Terraform** and **Docker**. This project automates the setup of a web tier, a database tier, and their underlying network infrastructure, ensuring a seamless and reproducible environment.
+![Terraform](https://img.shields.io/badge/Terraform-1.0+-7B42BC?logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white)
+![License](https://img.shields.io/badge/License-Educational-yellow)
+
+A robust and scalable **three-tier architecture** deployment using **Terraform** and **Docker**. This project automates the setup of a web tier, a database tier, and their underlying network infrastructure, ensuring a seamless and reproducible environment.
 
 ---
 
@@ -8,7 +14,7 @@ A robust and scalable three-tier architecture deployment using **Terraform** and
 
 The application is structured into two main logical tiers connected via a dedicated Docker network:
 
-- **🌐 Web Tier**: An Nginx web server acting as the front-facing component.
+- **🌐 Web Tier**: An Nginx web server acting as the front-facing reverse proxy.
 - **🗄️ Database Tier**: A PostgreSQL database (v15-alpine) with a persistent volume for data durability.
 - **🔌 Networking**: A shared Docker bridge network allowing secure internal communication between tiers.
 
